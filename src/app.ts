@@ -19,6 +19,7 @@ function setCanvasFullSize(p5: P5) {
 	const width = canvasDiv.clientWidth;
 	const height = canvasDiv.clientHeight;
 	p5.resizeCanvas(width, height);
+	p5.background("white");
 }
 
 // Creating the sketch itself
@@ -34,9 +35,6 @@ const sketch = (p5: P5) => {
 		// Creating and positioning the canvas
 		const canvas = p5.createCanvas(100, 100);
 		canvas.parent("app");
-
-		// Configuring the canvas
-		p5.background("white");
 
 		// Set canvas size
 		setCanvasFullSize(p5);
